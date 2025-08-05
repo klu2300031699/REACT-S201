@@ -5,6 +5,9 @@ function App() {
   return (
     <div className="App">
        <h1>welcomee to deployed project</h1>
+       <a href="https://reactjs.org" target="_blank" rel="noopener noreferrer">
+         Learn React
+       </a>
     </div>
   );
 }

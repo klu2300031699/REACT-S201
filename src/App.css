@@ -29,14 +29,12 @@ body {
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
 }
 
 .App-link {
@@ -61,4 +59,45 @@ h1 {
   border-radius: 16px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
   border: 1px solid rgba(255,255,255,0.18);
+}
+
+.fancy-btn {
+  padding: 14px 32px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #ff8a00, #e52e71);
+  color: #fff;
+  cursor: pointer;
+  margin-bottom: 32px;
+  box-shadow: 0 4px 24px rgba(229,46,113,0.2);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+.fancy-btn:hover {
+  transform: scale(1.07);
+  box-shadow: 0 8px 32px rgba(229,46,113,0.3);
+}
+
+.animated-text {
+  font-size: 2.2rem;
+  letter-spacing: 2px;
+  color: #fff;
+  margin: 0;
+  min-height: 2.5em;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  text-shadow: 1px 1px 8px rgba(0,0,0,0.2);
+}
+
+.animated-text span {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(20px) scale(0.8) rotate(-8deg);
+  animation: letterIn 0.4s forwards;
+}
+
+@keyframes letterIn {
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1) rotate(0);
+  }
 }
